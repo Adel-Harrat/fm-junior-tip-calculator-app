@@ -91,7 +91,7 @@ function App() {
                   <button
                     key={perc}
                     className={`bg-tw-dark-cyan text-tw-white rounded-lg py-2 text-xl md:text-2xl tracking-wider hover:bg-[#9fe8df] hover:text-tw-dark-cyan transition my-ring ${
-                      perc === tip && "bg-[#9fe8df] !text-tw-dark-cyan"
+                      perc === tip && "!bg-[#9fe8df] !text-tw-dark-cyan"
                     }`}
                     onClick={() => setTip(perc)}
                   >
