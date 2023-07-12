@@ -45,8 +45,8 @@ function App() {
 
   tipAmount = tipAmount ? tipAmount : 0;
 
-  tipAmount = parseFloat(tipAmount).toFixed(2);
-  total = parseFloat(total).toFixed(2);
+  tipAmount = parseFloat(tipAmount).toFixed(2).replace(/\.00$/, "");
+  total = parseFloat(total).toFixed(2).replace(/\.00$/, "");
 
   return (
     <div className="min-h-screen bg-tw-light-grayish-cyan grid place-items-center">
